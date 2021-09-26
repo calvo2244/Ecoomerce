@@ -1,0 +1,34 @@
+-----establecer conexion con el repositorio web 
+1. crear una carpeta en la ubicacion de interes 
+2. abrir la consola, o terminal 
+3. acceder ala ubicacion del repositorio local 
+	cd <ubicacion> cmd=(change directory, cambio de directorio)
+	cd D:\github_repo\pruebas25
+4.inicializar repositorio
+	git init 
+5. establecer conexion con el repositorio we
+	git remote add origin <url repositorio >
+	git remote add origin https://github.com/calvo2244/pruebas25
+6. verificar conexion 
+	git remote -v
+
+-------- subir contenido
+
+1. abrir la consola, o terminal 
+2. acceder ala ubicacion del repositorio local 
+	cd <ubicacion> cmd=(change directory, cambio de directorio)
+	cd D:\github_repo\pruebas25
+3.(opcional) Verificar diferencia entre repositorio web y local 
+	git status
+4. especificar archivos a subir 
+	git add <nombre_archivo>
+	git add . (. añadir todos los archivos nuevos, "rojos")
+5. especifica comentario de subida (obligatorio)
+	git comit -m "comentario"
+6. subir archivos
+	git push origin master
+
+------nota
+	error para loguearse por primera vez
+	git config --global user.email "calvo2244@hotmail.com" 
+	git config --global user.name "calvo2244@hotmail.com"
